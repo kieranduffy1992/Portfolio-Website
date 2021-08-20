@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Kieran Duffy</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/7faff22044.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+
 </head>
 <body>
     <!-- nav bar -->
@@ -37,14 +38,14 @@
     <section class="main-area">
         <div class="left-section">
             <div class="intro">
-                <div class="intro-img"><img src="images/avatar.png" alt="Avatar"></div>
-                <div class="intro-h1"><h1>Hi, I am<br>Kieran</h1></div>
-                <div class="intro-p"><p>Student Software Developer</p></div>
+                <div class="intro-img" data-aos="zoom-in-right"><img src="images/Avatar.png" alt="Avatar"></div>
+                <div class="intro-h1" data-aos="fade-down"><h1>Hi, I am<br>Kieran</h1></div>
+                <div class="intro-p" data-aos="zoom-in-up"><p>Student Software Developer</p></div>
             </div>
         </div>
         <div class="right-section">
 
-            <div id="color-options">
+            <div id="color-options" data-aos="flip-right">
                 <div id="blue" class="square"></div>
                 <div id="purple" class="square"></div>
                 <div class="square pink"></div>
@@ -59,10 +60,11 @@
 
     <!--Projects-->
 
-    <section>
-        <h2 class="headings">Projects</h2>
-        <div class="projects">
-            <div id="library">
+    <section id="projects-section" data-aos="fade-up">
+
+        <h2 id="projects-heading"></h2>
+        <div class="blocks">
+            <div id="library" data-aos="zoom-in-up">
                 <div class="text">
                     <h3>Library System</h3>
                     <p>
@@ -71,7 +73,7 @@
                     <a href="#">View on Github <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
-            <div id="tax-calculator">
+            <div id="tax-calculator" data-aos="zoom-in-up">
                 <div class="text">
                     <h3>Tax Calculator</h3>
                     <p>
@@ -80,7 +82,7 @@
                     <a href="#">View on Github <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
-            <div id="portfolio-website">
+            <div id="portfolio-website" data-aos="zoom-in-up">
                 <div class="text">
                     <h3>Portfolio Website</h3>
                     <p>
@@ -91,6 +93,23 @@
             </div>
         </div>
     </section>
+
+    <section id="skills-section">
+        <h2 id="skills-heading">Skills</h2>
+
+        <div class="blocks">
+            <p>I am currently studying for a Bachelor of Science in Computing with Software Development
+                at Munster Technological University.<br>The following are some skills which I have learned
+                and looking to master:</p>
+        </div>
+
+    </section>
+
+
+    <script src="https://kit.fontawesome.com/7faff22044.js" crossorigin="anonymous"></script>
+    <script src="javascript/aos.js"></script>
+    <script src="javascript/main.js"></script>
+
 
 </body>
 </html>
