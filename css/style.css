@@ -1,39 +1,37 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
-body{
+body {
     width: 100%;
     font-family: 'Courier New', monospace;
     font-size: 11px;
     background-color: white;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
 /* Navigation bar */
-.navigation{
+.navigation {
     display: flex;
     height: 50px;
     font-size: 14px;
     background-color: #5e13cf;
 }
 
-.navigation ul{
+.navigation ul {
     display: flex;
 }
 
-.navigation ul li{
+.navigation ul li {
     padding: 0 12px;
 }
 
@@ -58,30 +56,30 @@ ul{
     padding-right: 50px;
 }
 
-.right-nav a{
+.right-nav a {
     color: #262626;
 }
 
-#name{
+#name {
     color: white;
     margin-right: auto;
     padding-left: 100px;
 }
 
-.navigation ul li a:hover{
+.navigation ul li a:hover {
     opacity: 0.4;
 }
 
 /* main area */
 
-.main-area{
+.main-area {
     display: flex;
     width: 100%;
     height: 520px;
 
 }
 
-.left-section{
+.left-section {
     width: 70%;
     background-color: #6715e3;
     font-size: 18px;
@@ -89,11 +87,11 @@ ul{
 
 }
 
-.intro{
+.intro {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    width:75%;
+    width: 75%;
     height: 100%;
     padding: 100px 10px 0 90px;
     justify-content: center;
@@ -111,19 +109,19 @@ ul{
     align-self: start;
 }
 
-.intro img{
+.intro img {
     min-width: 100%;
     min-height: 100%;
 }
 
-.intro-img{
+.intro-img {
     grid-column: 1;
     grid-row: 1;
     z-index: 1;
     margin-left: 13px;
 }
 
-.intro-h1{
+.intro-h1 {
     grid-column: 2;
     grid-row: 1;
     align-self: end;
@@ -131,58 +129,57 @@ ul{
     padding: 0 0 0 10px;
 }
 
-.right-section{
+.right-section {
     width: 30%;
     margin-top: 100px;
 }
 
-#color-options{
+#color-options {
     display: flex;
     flex-direction: column;
 }
 
-.square{
+.square {
     height: 70px;
     width: 70px;
     border-radius: 15%;
     background-color: #262626;
-
 }
 
-#purple, #black{
+#purple, #black {
     background-color: white;
     margin-left: -70px;
 }
 
-#blue, #green, #dark{
+#blue, #green, #dark {
     background-color: #6715e3;
 }
 
-.pink{
+.pink {
     border-radius: 50%;
     background-color: #fa8eef;
     margin: -70px 0 0 1px;
 }
 
-/*Projects*/
+/*Projects and skills*/
 
-#projects-section, #skills-section{
+#projects-section, #skills-section {
     width: 100%;
     height: 500px;
     display: flex;
     flex-direction: column;
 }
 
-#projects-section{
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 32%, rgba(255,163,246,1) 100%);
+#projects-section {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 32%, rgba(255, 163, 246, 1) 100%);
     margin-top: 60px;
 }
 
-#skills-section{
-    background: linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 32%, rgba(255,163,246,1) 100%);
+#skills-section {
+    background: linear-gradient(360deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 32%, rgba(255, 163, 246, 1) 100%);
 }
 
-#projects-heading, #skills-heading{
+#projects-heading, #skills-heading {
     text-align: center;
     margin-bottom: 40px;
     font-size: 30px;
@@ -191,24 +188,25 @@ ul{
     text-decoration: overline;
 }
 
-#projects-heading{
+#projects-heading {
     color: #fa8eef;
 }
 
-#skills-heading{
+#skills-heading {
     color: #6715e3;
     margin-top: 40px;
 }
 
-.blocks{
+.blocks {
     width: 80%;
     height: auto;
     display: grid;
     column-gap: 0;
     padding: 30px;
     color: #f2f3f4;
-    box-shadow: 0px 5px 20px 1px;
+    box-shadow: 0 5px 20px 1px;
     justify-items: center;
+    border: white solid 2px;
 }
 
 #projects-section .blocks {
@@ -220,9 +218,10 @@ ul{
 #skills-section .blocks {
     align-self: flex-start;
     background-color: #6715e3;
+    height: 350px;
 }
 
-.text{
+.text {
     max-width: 70%;
     min-width: 70%;
     background-color: pink;
@@ -234,41 +233,77 @@ ul{
     border-radius: 5px;
 }
 
-.text:hover{
+.text:hover {
     opacity: 0.9;
     color: rgba(255, 255, 255, 1);
 }
 
-#library, #tax-calculator, #portfolio-website{
+#library, #tax-calculator, #portfolio-website {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
     border: white solid 1px;
 }
 
-#library{
-    background: url("../images/Library.jpg") no-repeat
-    center center/cover;
+#library {
+    background: url("../images/Library.jpg") no-repeat center center/cover;
 
 }
 
-#tax-calculator{
-    background: url("../images/Tax-Calculator.jpg") no-repeat
-    center center/cover;
+#tax-calculator {
+    background: url("../images/Tax-Calculator.jpg") no-repeat center center/cover;
+}
+
+#portfolio-website {
+    background: url("../images/Portfolio-Website.jpg") no-repeat center center/cover;
 
 }
 
-#portfolio-website{
-    background: url("../images/Portfolio-Website.jpg") no-repeat
-    center center/cover;
-
+#skills-section div h3 {
+    margin-top: 15px;
 }
 
-#skills-section p{
+#skills-section p {
+    font-size: 14px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 30px;
+    align-content: center;
+}
+
+.cards div {
     text-align: center;
+    background-color: #6715e3;
+    padding: 10px;
+    box-shadow: 0 5px 20px 1px #3c0e80;
+    height: 180px;
+}
 
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background: #fa8eef;
+    color: white;
+    padding: 2px 30px;
+    font-size: 14px;
+}
 
+#right-footer {
+    margin-left: auto;
+}
+
+#right-footer i {
+    margin-left: 10px;
+}
+
+#right-footer a {
+    color: white;
 }
 
 ::-webkit-scrollbar {
@@ -276,20 +311,14 @@ ul{
     border-radius: 100px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background: white;
     border-radius: 100px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: #d8dadd;
     border-radius: 100px;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-
-}
 

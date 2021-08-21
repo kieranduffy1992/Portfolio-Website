@@ -11,8 +11,8 @@ function isVisible(element) {
 
     // Check if element is visible
     return size.top >= 0 && size.left >= 0 &&
-           size.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-           size.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+        size.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+        size.bottom <= (window.innerHeight || document.documentElement.clientHeight);
 }
 
 let i = 0;
@@ -30,7 +30,7 @@ let fired = false;
 
 window.addEventListener('scroll', function () {
     if (isVisible(element) && fired === false) {
-            typeWord();
-            fired = true;
+        typeWord();
+        fired = true;
     }
 }, false);
