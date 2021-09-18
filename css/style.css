@@ -46,6 +46,7 @@ ul {
 .navigation ul.left-nav a {
     color: white;
     padding-right: 20px;
+    cursor: pointer;
 }
 
 .navigation ul.right-nav {
@@ -67,7 +68,8 @@ ul {
 }
 
 .navigation ul li a:hover {
-    opacity: 0.4;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* main area */
@@ -76,7 +78,6 @@ ul {
     display: flex;
     max-width: 100%;
     height: 520px;
-
 }
 
 .left-section {
@@ -84,14 +85,13 @@ ul {
     background-color: #6715e3;
     font-size: 18px;
     color: white;
-
 }
 
 .intro {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    width: 75%;
+    width: 57%;
     height: 100%;
     padding: 100px 10px 0 90px;
     justify-content: center;
@@ -110,8 +110,10 @@ ul {
 }
 
 .intro img {
-    min-width: 100%;
-    min-height: 100%;
+    max-width: 200px;
+    max-height: 230px;
+    border: 2px solid #fa8eef;
+    opacity: 0.8;
 }
 
 .intro-img {
@@ -165,7 +167,7 @@ ul {
 
 #projects-section, #skills-section {
     max-width: 100%;
-    height: 500px;
+    height: 450px;
     display: flex;
     flex-direction: column;
 }
@@ -199,7 +201,6 @@ ul {
 
 .blocks {
     width: 80%;
-    height: auto;
     display: grid;
     padding: 30px;
     color: #f2f3f4;
@@ -216,7 +217,7 @@ ul {
 #skills-section .blocks {
     align-self: flex-start;
     background-color: #6715e3;
-    height: 350px;
+    height: 300px;
 }
 
 .text {
@@ -235,7 +236,7 @@ ul {
     color: rgba(255, 255, 255, 1);
 }
 
-#library, #tax-calculator, #portfolio-website {
+#library, #tax-calculator, #nasa-app {
     max-width: 400px;
     max-height: 400px;
     box-shadow: 0 5px 20px 1px #620457;
@@ -251,8 +252,8 @@ ul {
     background: url("../images/Tax-Calculator.jpg") no-repeat center center/cover;
 }
 
-#portfolio-website {
-    background: url("../images/Portfolio-Website.jpg") no-repeat center center/cover;
+#nasa-app {
+    background: url("../images/spacex.jpg") no-repeat center center/cover;
 
 }
 
@@ -262,23 +263,22 @@ ul {
 
 #skills-section p {
     font-size: 14px;
-    margin-bottom: 20px;
 }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 20px;
+    column-gap: 10px;
     max-width: 95%;
 }
 
 .cards div {
     text-align: center;
     background-color: #6715e3;
-    padding: 10px;
+    padding: 5px;
     box-shadow: 0 5px 20px 1px #3c0e80;
     max-width: 150px;
-    max-height: 280px;
+    max-height: 200px;
 }
 
 footer {
@@ -328,7 +328,7 @@ footer {
 
 @media screen and (max-width: 760px) {
      .blocks {
-        width: 95%;
+        width: 90%;
     }
 
 }
@@ -366,4 +366,67 @@ footer {
     }
 }
 
+@media screen and (max-width: 550px) {
+    #name{
+        display: none ;
+    }
 
+    .navigation ul.right-nav {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #color-options{
+        display: none;
+    }
+
+    .intro {
+        padding: 10px 10px 0 105px;
+    }
+
+    .blocks{
+        width: 95%;
+    }
+
+    #skills-section .blocks{
+        padding-left: 10px ;
+    }
+
+    #library, #tax-calculator, #portfolio-website {
+        max-height: 200px;
+    }
+
+    .text{
+        margin-top: 82px;
+        opacity: 0.9;
+        line-height: 1.1;
+    }
+
+    #projects-section {
+        height: 350px;
+    }
+
+    .navigation ul.left-nav{
+        padding-right: 5px;
+    }
+
+    .navigation ul.left-nav a {
+        border-left: white solid 1px;
+        padding: 0 0 0 8px;
+    }
+
+    .navigation ul li {
+        padding: 0 3px 0 8px;
+    }
+
+    .intro-p{
+        font-size: 12px;
+        width: 80px;
+        height: 60px;
+    }
+
+    footer {
+        padding: 2px 20px;
+    }
+}

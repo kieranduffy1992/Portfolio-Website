@@ -34,3 +34,21 @@ window.addEventListener('scroll', function () {
         fired = true;
     }
 }, false);
+
+
+const projectsButton = document.getElementById('projects-button')
+const skillsButton = document.getElementById('skills-button')
+
+projectsButton.addEventListener('click', scroll);
+skillsButton.addEventListener('click', scroll);
+
+function scroll(event){
+
+    if(event.target.id === 'skills-button'){
+        document.getElementById('skills-heading').scrollIntoView({behavior: 'smooth', block:'start'});
+    }
+    else{
+        document.getElementById('projects-alert').scrollIntoView({behavior: 'smooth', block:'start'});
+    }
+
+}
