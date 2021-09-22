@@ -3,13 +3,22 @@ AOS.init({
     duration: 3000
 });
 
+let fired = false;
 let element = document.querySelector('#projects-heading');
 
+window.addEventListener('scroll', function () {
+    if (isVisible(element) && fired === false && window.innerWidth > 700) {
+        element.innerHTML="";
+        typeWord();
+        fired = true;
+    }
+}, false);
+
+// Check if element is visible
 function isVisible(element) {
-    // Get the size of the element and position in the viewport:
+    // Get the size of the element and position in the viewport
     const size = element.getBoundingClientRect();
 
-    // Check if element is visible
     return size.top >= 0 && size.left >= 0 &&
         size.right <= (window.innerWidth || document.documentElement.clientWidth) &&
         size.bottom <= (window.innerHeight || document.documentElement.clientHeight);
@@ -25,16 +34,6 @@ function typeWord() {
         setTimeout(typeWord, 400);
     }
 }
-
-let fired = false;
-
-window.addEventListener('scroll', function () {
-    if (isVisible(element) && fired === false) {
-        typeWord();
-        fired = true;
-    }
-}, false);
-
 
 const projectsButton = document.getElementById('projects-button')
 const skillsButton = document.getElementById('skills-button')
